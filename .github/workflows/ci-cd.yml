@@ -23,10 +23,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run tests
-        run: |
-          pytest tests/
-
       - name: Train model
-        run: |
-          python src/train.py
+        run: python src/train.py
+      
+      - name: Run API tests
+        run: pytest
+      
+      - name: Generate monitoring report
+  run: python monitoring/monitor.py
