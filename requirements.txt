@@ -3,5 +3,6 @@ scikit-learn
 mlflow
 fastapi
 uvicorn
-pytest
 joblib
+pytest
+evidently
