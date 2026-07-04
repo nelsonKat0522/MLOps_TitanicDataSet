@@ -30,4 +30,4 @@ jobs:
         run: pytest
       
       - name: Generate monitoring report
-  run: python monitoring/monitor.py
+  run:     python monitoring/monitor.py
