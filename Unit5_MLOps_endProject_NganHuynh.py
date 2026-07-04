@@ -120,7 +120,7 @@ def train_model(X_train, y_train) -> LogisticRegression:
     Returns:
         Trained Logistic Regression model.
     """
-    model = LogisticRegression(random_state=RANDOM_STATE, max_iter=1000)
+    model = LogisticRegression(random_state=RANDOM_STATE, max_iter=1500)
     model.fit(X_train, y_train)
 
     Path("models").mkdir(exist_ok=True)
@@ -174,7 +174,7 @@ def log_to_mlflow(model, metrics: dict):
     with mlflow.start_run() as run:
         # Log parameters
         mlflow.log_param("model_type", "LogisticRegression")
-        mlflow.log_param("max_iter", 1000)
+        mlflow.log_param("max_iter", 1500)
         mlflow.log_param("random_state", RANDOM_STATE)
 
         # Log metrics
