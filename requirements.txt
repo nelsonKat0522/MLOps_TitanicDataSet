@@ -1,8 +1,14 @@
 pandas
+numpy
 scikit-learn
-mlflow
+matplotlib
+seaborn
 fastapi
 uvicorn
+mlflow
+dvc
+evidently
 joblib
 pytest
-evidently
+imbalanced-learn
+xgboost
